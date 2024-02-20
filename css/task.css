@@ -1,10 +1,10 @@
-.task {
+.tasks {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.task__item{
+.tasks__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
@@ -13,26 +13,43 @@
     border-bottom: 1px solid #ddd;
 }
 
-.task__content--done{
+.tasks__item--hidden {
+    display: none;
+}
+
+.tasks__content--done {
     text-decoration: line-through;
 }
 
-.task__button {
+.tasks__button {
     border: none;
-    color: rgb(0, 0, 0);
+    color: white;
     width: 30px;
     height: 30px;
     padding: 0;
+    transition: background 0.3s;
 }
 
-.task__button--toggleDone{
-    background: rgba(78, 63, 47, 0.84);
+.tasks__button--toggleDone {
+    background: hsl(120, 61%, 34%);
 }
 
-.task__button--toggleDone:hover{
-    background: rgba(78, 63, 47, 0.42);
+.tasks__button--toggleDone:hover {
+    background: hsl(120, 61%, 39%);
 }
 
-.task__button--toggleDone:active{
-    background: rgb(78, 63, 47);
+.tasks__button--toggleDone:active {
+    background: hsl(120, 61%, 44%);
+}
+
+.tasks__button--remove {
+    background: hsl(348, 83%, 47%);
+}
+
+.tasks__button--remove:hover {
+    background: hsl(348, 83%, 52%);
+}
+
+.tasks__button--remove:active {
+    background: hsl(348, 83%, 57%);
 }

@@ -1,33 +1,33 @@
-.form{
+.form {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 }
 
 @media(max-width: 767px) {
-    .form{
+    .form {
         grid-template-columns: 1fr;
     }
 }
 
 .form__input {
     padding: 10px;
-    border: 1px solid rgb(171, 168, 168);
-
+    border: 1px solid #ddd;
 }
 
 .form__button {
     padding: 10px;
-    background: rgba(78, 63, 47, 0.84);
+    background: hsl(180, 100%, 25%);
     color: white;
     border: none;
+    transition: 0.3s;
 }
 
 .form__button:hover {
-    background: rgba(78, 63, 47, 0.42);
-
+    background: hsl(180, 100%, 30%);
+    transform: scale(1.1);
 }
 
 .form__button:active {
-    background: rgb(78, 63, 47);
+    background: hsl(180, 100%, 35%);
 }
